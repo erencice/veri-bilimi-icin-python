@@ -162,17 +162,10 @@ python veri-bilimi-icin-python/1.temel-matematiksel-operatorler.py
 - [ ] 27-29: Profesyonel konuları öğrenme
 
 ### ✅ Alıştırmalar
-- [ ] 14-alistirmalar.py: 6/6 alıştırma tamamlandı
-- [ ] 18-alistirmalar.py: 7/7 alıştırma tamamlandı
-- [ ] 26-alistirmalar.py: 8/8 alıştırma tamamlandı
-- [ ] 29-alistirmalar.py: 7/7 alıştırma tamamlandı
-
-### ✅ Veri Analizi
-- [ ] NumPy temelleri
-- [ ] Pandas veri işleme
-- [ ] Matplotlib/Seaborn görselleştirme
-- [ ] İstatistik analizi
-- [ ] Keşifçi veri analizi
+- [ ] 14-alistirmalar.py: 6 alıştırma 
+- [ ] 18-alistirmalar.py: 7 alıştırma 
+- [ ] 26-alistirmalar.py: 8 alıştırma 
+- [ ] 29-alistirmalar.py: 7 alıştırma 
 
 ## 🤝 Katkıda Bulunma
 
