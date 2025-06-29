@@ -1,0 +1,287 @@
+"""
+26. ALIŞTIRMALAR - FONKSİYONEL PROGRAMLAMA VE KAPSAMLI PROJELER
+============================================================
+
+Bu dosya şimdiye kadar öğrendiğiniz tüm konuları birleştiren
+kapsamlı alıştırmalar içerir.
+
+Kullanılan Konular:
+- Fonksiyonlar (def, return, parameters)
+- Lambda fonksiyonları
+- Map, filter, reduce kullanımı
+- List ve dict comprehensions
+- Hata yakalama (try-except)
+- Dosya işlemleri (temel düzeyde)
+- Sınıflar ve nesneler
+- Algoritmik düşünme
+"""
+
+print("=" * 60)
+print("KAPSAMLI ALIŞTIRMALAR - FONKSİYONEL PROGRAMLAMA")
+print("=" * 60)
+
+# ALIŞTIRMA 1: İkinci Derece Denklem Çözücü
+print("\n1. ALIŞTIRMA: İKİNCİ DERECE DENKLEM ÇÖZÜCÜ")
+print("-" * 45)
+print("Açıklama: ax² + bx + c = 0 şeklindeki denklemi çözen fonksiyon yazın.")
+print()
+print("Görevler:")
+print("• ikinci_derece_denklem(a, b, c) fonksiyonu yazın")
+print("• Diskriminant (Δ = b² - 4ac) hesaplayın")
+print("• Kök durumlarını kontrol edin:")
+print("  - Δ > 0: İki farklı gerçek kök")
+print("  - Δ = 0: Bir gerçek kök (çift kök)")
+print("  - Δ < 0: Gerçek kök yok")
+print("• Sonuçları uygun formatta döndürün")
+print()
+print("Formüller:")
+print("x₁ = (-b + √Δ) / (2a)")
+print("x₂ = (-b - √Δ) / (2a)")
+print()
+print("Test Verileri:")
+print("• ikinci_derece_denklem(1, -5, 6) → [2.0, 3.0]")
+print("• ikinci_derece_denklem(1, -2, 1) → [1.0]")
+print("• ikinci_derece_denklem(1, 0, 1) → 'Gerçek kök yok'")
+print()
+print("İpuçları:")
+print("• math.sqrt() veya ** 0.5 kullanın")
+print("• Hata durumları için try-except kullanın")
+print("• a = 0 durumunu kontrol edin")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 2: Metin Analiz Aracı
+print("\n\n2. ALIŞTIRMA: METİN ANALİZ ARACI")
+print("-" * 35)
+print("Açıklama: Kapsamlı metin analizi yapan fonksiyonlar yazın.")
+print()
+print("Görevler:")
+print("• metin_analiz(metin) fonksiyonu yazın")
+print("• Aşağıdaki bilgileri hesaplayın:")
+print("  - Toplam karakter sayısı")
+print("  - Boşluksuz karakter sayısı")
+print("  - Kelime sayısı")
+print("  - Cümle sayısı")
+print("  - Paragraf sayısı")
+print("  - En uzun ve en kısa kelime")
+print("  - Ortalama kelime uzunluğu")
+print("• Sonuçları sözlük olarak döndürün")
+print()
+print("Bonus Özellikler:")
+print("• Harf frekansı analizi")
+print("• En çok kullanılan kelimeler")
+print("• Okuma süresi tahmini (dakika)")
+print()
+print("İpuçları:")
+print("• split() metodlarını kullanın")
+print("• Counter (collections) modülü faydalı olabilir")
+print("• Regular expressions (re) modülü kullanabilirsiniz")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 3: Sayı Sistemi Dönüştürücü
+print("\n\n3. ALIŞTIRMA: SAYI SİSTEMİ DÖNÜŞTÜRÜCÜ")
+print("-" * 40)
+print("Açıklama: Farklı sayı sistemleri arasında dönüşüm yapın.")
+print()
+print("Görevler:")
+print("• Onluk (decimal) → İkilik (binary) dönüşüm")
+print("• Onluk (decimal) → Sekizlik (octal) dönüşüm")
+print("• Onluk (decimal) → Onaltılık (hexadecimal) dönüşüm")
+print("• Tersi dönüşümler (binary/octal/hex → decimal)")
+print("• Tüm dönüşümleri tek fonksiyonda birleştirin")
+print()
+print("Fonksiyon Örnekleri:")
+print("• sayi_donustur(42, 'dec', 'bin') → '101010'")
+print("• sayi_donustur('101010', 'bin', 'dec') → 42")
+print("• sayi_donustur(255, 'dec', 'hex') → 'FF'")
+print()
+print("İpuçları:")
+print("• bin(), oct(), hex() built-in fonksiyonları")
+print("• int(sayı, taban) ile taban dönüşümü")
+print("• String işlemleri ile format düzenleme")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 4: Şifreleme Algoritması
+print("\n\n4. ALIŞTIRMA: ŞİFRELEME ALGORİTMASI")
+print("-" * 35)
+print("Açıklama: Caesar cipher (Sezar şifresi) algoritması uygulayın.")
+print()
+print("Görevler:")
+print("• caesar_sifrele(metin, kaydirma) fonksiyonu yazın")
+print("• caesar_coz(sifreli_metin, kaydirma) fonksiyonu yazın")
+print("• Harfleri belirtilen sayı kadar kaydırın")
+print("• Türkçe karakter desteği ekleyin")
+print("• Büyük-küçük harf korunmalı")
+print("• Sayı ve özel karakterler değişmemeli")
+print()
+print("Örnek:")
+print("Metin: 'Merhaba Dünya'")
+print("Kaydırma: 3")
+print("Şifreli: 'Phukded Gvqbd'")
+print()
+print("Algoritma:")
+print("• A → D, B → E, C → F ... X → A, Y → B, Z → C")
+print("• Alphabet sınırında döngü yapın")
+print()
+print("İpuçları:")
+print("• ord() ve chr() fonksiyonları")
+print("• Modülo (%) operatörü ile döngü")
+print("• String constants (ascii_letters) kullanabilirsiniz")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 5: Veri Yapısı Simülatörü
+print("\n\n5. ALIŞTIRMA: VERİ YAPISI SİMÜLATÖRÜ")
+print("-" * 40)
+print("Açıklama: Stack (Yığın) veri yapısını simüle edin.")
+print()
+print("Görevler:")
+print("• Stack sınıfı oluşturun")
+print("• push(item) metodu - eleman ekleme")
+print("• pop() metodu - eleman çıkarma")
+print("• peek() metodu - üstteki elemanı görme")
+print("• is_empty() metodu - boş mu kontrolü")
+print("• size() metodu - eleman sayısı")
+print("• display() metodu - tüm elemanları gösterme")
+print()
+print("Stack Kuralları:")
+print("• LIFO (Last In, First Out) - Son giren ilk çıkar")
+print("• Sadece üstten ekleme/çıkarma")
+print("• Boş stack'ten pop yapılamaz")
+print()
+print("Test Senaryosu:")
+print("s = Stack()")
+print("s.push(1), s.push(2), s.push(3)")
+print("s.pop() → 3")
+print("s.peek() → 2")
+print()
+print("İpuçları:")
+print("• Liste kullanarak stack simüle edin")
+print("• Hata durumları için exception kullanın")
+print("• __str__ metodu ile güzel görünüm")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 6: Dosya İşlem Aracı
+print("\n\n6. ALIŞTIRMA: DOSYA İŞLEM ARACI")
+print("-" * 35)
+print("Açıklama: Dosya işlemlerini otomatikleştiren araçlar yazın.")
+print()
+print("Görevler:")
+print("• dosya_istatistik(dosya_adi) fonksiyonu yazın")
+print("• Dosya hakkında bilgi verin:")
+print("  - Dosya boyutu")
+print("  - Satır sayısı")
+print("  - Kelime sayısı")
+print("  - Karakter sayısı")
+print("• dosya_temizle(dosya_adi) fonksiyonu yazın:")
+print("  - Boş satırları kaldır")
+print("  - Başta/sonda boşlukları temizle")
+print("  - Çift boşlukları tek boşluk yap")
+print("• Hata durumlarını ele alın")
+print()
+print("Bonus:")
+print("• CSV dosyası okuma/yazma")
+print("• Dosya backup oluşturma")
+print("• Dosya karşılaştırma")
+print()
+print("İpuçları:")
+print("• with open() kullanın")
+print("• os.path modülü file bilgileri için")
+print("• try-except ile dosya hatalarını yakalayın")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# ALIŞTIRMA 7: Basit Hesap Makinesi Sınıfı
+print("\n\n7. ALIŞTIRMA: BASİT HESAP MAKİNESİ SINIFI")
+print("-" * 45)
+print("Açıklama: Gelişmiş hesap makinesi sınıfı oluşturun.")
+print()
+print("Görevler:")
+print("• Hesaplayici sınıfı oluşturun")
+print("• Temel işlemler: +, -, *, /")
+print("• Gelişmiş işlemler: üs alma, karekök, faktöriyel")
+print("• İşlem geçmişi tutun")
+print("• Son sonucu hafızada saklayın")
+print("• Zincirleme işlem yapabilsin")
+print()
+print("Özellikler:")
+print("• calc = Hesaplayici()")
+print("• calc.topla(5).carp(3).bol(2) → 7.5")
+print("• calc.gecmis() → tüm işlemleri göster")
+print("• calc.temizle() → hafızayı temizle")
+print()
+print("Bonus:")
+print("• Trigonometrik fonksiyonlar")
+print("• Logaritma hesaplama")
+print("• Yüzde hesaplama")
+print()
+print("İpuçları:")
+print("• Method chaining için self döndürün")
+print("• math modülünü kullanın")
+print("• __str__ ve __repr__ metodları")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+# BONUS ALIŞTIRMA: Mini Veritabanı
+print("\n\n8. BONUS ALIŞTIRMA: MİNİ VERİTABANI")
+print("-" * 40)
+print("Açıklama: JSON tabanlı basit veritabanı sistemi oluşturun.")
+print()
+print("Görevler:")
+print("• MiniDB sınıfı oluşturun")
+print("• Kayıt ekleme (CREATE)")
+print("• Kayıt okuma (READ)")
+print("• Kayıt güncelleme (UPDATE)")
+print("• Kayıt silme (DELETE)")
+print("• Filtreleme ve arama")
+print("• JSON dosyasına kaydetme/yükleme")
+print()
+print("Örnek Kullanım:")
+print("db = MiniDB('ogrenciler.json')")
+print("db.ekle({'id': 1, 'ad': 'Ali', 'not': 85})")
+print("db.ara('ad', 'Ali')")
+print("db.guncelle(1, {'not': 90})")
+print("db.sil(1)")
+print()
+print("İpuçları:")
+print("• json modülünü kullanın")
+print("• UUID ile benzersiz ID oluşturun")
+print("• Lambda ile filtreleme")
+
+# ÇÖZÜM ALANI:
+print("\n--- ÇÖZÜMÜNÜZÜ BURAYA YAZIN ---")
+
+
+print("\n" + "=" * 60)
+print("ALIŞTIRMA TAMAMLAMA KONTROL LİSTESİ")
+print("=" * 60)
+print("□ Alıştırma 1: İkinci derece denklem çözücü")
+print("□ Alıştırma 2: Metin analiz aracı")
+print("□ Alıştırma 3: Sayı sistemi dönüştürücü")
+print("□ Alıştırma 4: Şifreleme algoritması")
+print("□ Alıştırma 5: Veri yapısı simülatörü")
+print("□ Alıştırma 6: Dosya işlem aracı")
+print("□ Alıştırma 7: Hesap makinesi sınıfı")
+print("□ Bonus: Mini veritabanı")
+print()
+print("🎯 Bu alıştırmalar ile Python programcısı olma yolunda büyük adım atıyorsunuz!")
+print("💡 Her alıştırma gerçek dünya problemlerini çözmeyi öğretiyor.")
+print("✨ Bu alıştırmaları tamamladıktan sonra kendi projelerinize başlayabilirsiniz!")
+print("🚀 Başarılar!")
